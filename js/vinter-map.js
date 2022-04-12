@@ -1,0 +1,298 @@
+//Map Generation ------------------------------------------------------------------------------------
+var mapMinZoom = 1;
+var mapMaxZoom = 5;
+
+var southWest = L.latLng(-300, -50),
+    northEast = L.latLng(50, 300),
+    bounds = L.latLngBounds(southWest, northEast);
+
+var map = L.map('map', {
+    maxZoom: mapMaxZoom,
+    minZoom: mapMinZoom,
+    maxBounds: bounds,
+    attributionControl: false,
+    zoomControl: false,
+    crs: L.CRS.Simple
+})
+
+var mapBounds = new L.LatLngBounds( // ?
+    map.unproject([0, 16384],mapMaxZoom),
+    map.unproject([16384, 0],mapMaxZoom));
+
+map.fitBounds(mapBounds);
+
+L.tileLayer('F:/Projects/Images/vinter-map/tiles/{z}/{x}/{y}.png', {
+    minZoom: 1,
+    maxZoom: 5,
+    tms: false,
+    noWrap: true
+}).addTo(map);
+
+map.addControl(L.control.zoom({ position: 'topright' })); // Add zoom controller to top-right.
+map.setView(new L.LatLng(-125, 125), 2); // Set view to centre(ish) of map.
+
+// Icon Definitions ---------------------------------------------------------------------------------
+var itemIcon = L.Icon.extend({
+    options: {
+      iconSize: [40, 40]
+    }
+});
+
+var portIcon = L.Icon.extend({
+    options:{
+        iconSize: [37.5, 45.5]
+    }
+})
+
+var iFishPike = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/pike-fish.png'});
+var iFishTrout = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/trout-fish.png'});
+var iFishRed = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/red-fish.png'});
+var iFishPerch = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/perch-fish.png'});
+var iFishWhite = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/white-fish.png'});
+var iFishRainbow = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/rainbow-fish.png'});
+var iFishSalmon = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/salmon-fish.png'});
+var iFishHaddock = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/haddock-fish.png'});
+var iFishMistyGrouper = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/mistygrouper-fish.png'});
+var iFishBlackGrouper = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/blackgrouper-fish.png'});
+var iFishSalmonShark = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/salmonshark-fish.png'});
+var iFishArcticChar = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/arcticchar-fish.png'});
+var iFishCatfish = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/catfish-fish.png'});
+var iFishAtlanticCod = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/atlanticcod-fish.png'});
+
+var iPort = new portIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/boat.png'});
+
+// Marker Creation Loop -----------------------------------------------------------------------------
+
+var portLayer = L.layerGroup([]);
+var fishLayer = L.layerGroup([]);
+
+var overlayMaps = {
+    "Ports": portLayer,
+    "Fish": fishLayer
+};
+
+var markerArray = [
+    // Outposts -----------------------------------------
+    [iPort,portLayer,-177,139,"Sgt. Lake Outpost"],
+    [iPort,portLayer,-119,80,"Tim's Outpost"],
+    [iPort,portLayer,-91,186,"Sirola's Secret Shop"],
+    [iPort,portLayer,-169,81,"Jax's Outpost"],
+    [iPort,portLayer,-193,82,"Henry's Fishing Docks"],
+    [iPort,portLayer,-214,163,"Mrs. Snow's Outpost"],
+    [iPort,portLayer,-214,217,"Artur's Outpost"],
+    [iPort,portLayer,-179,242,"Filemon's Outpost"],
+    [iPort,portLayer,-117,243,"Heimo & Rose"],
+    [iPort,portLayer,-164,37,"Diogo's Dock"],
+    [iPort,portLayer,-211,256,"Pix's Island"],
+
+    // Fish ---------------------------------------------
+    [iFishRed,fishLayer,-129,14,"Red Fish"], // ----- Red
+    [iFishRed,fishLayer,-194,32.5,"Red Fish"],
+    [iFishRed,fishLayer,-86.5,43.25,"Red Fish"],
+    [iFishRed,fishLayer,-197,0.5,"Red Fish"],
+    
+    [iFishTrout,fishLayer,-131.5,14,"Trout Fish"], // ----- Trout
+    [iFishTrout,fishLayer,-169,10.5,"Trout Fish"],
+    [iFishTrout,fishLayer,-131,50,"Trout Fish"], 
+    [iFishTrout,fishLayer,-119,34,"Trout Fish"], 
+    [iFishTrout,fishLayer,-114,17,"Trout Fish"], 
+    [iFishTrout,fishLayer,-196,33,"Trout Fish"], 
+    [iFishTrout,fishLayer,-118,54,"Trout Fish"], 
+    [iFishTrout,fishLayer,-88.5,43.5,"Trout Fish"], 
+    [iFishTrout,fishLayer,-68.25,46.5,"Trout Fish"], 
+    [iFishTrout,fishLayer,-56,43,"Trout Fish"], 
+    [iFishTrout,fishLayer,-41,41.5,"Trout Fish"], 
+    [iFishTrout,fishLayer,0,44,"Trout Fish"], 
+    [iFishTrout,fishLayer,-42,11.5,"Trout Fish"], 
+    [iFishTrout,fishLayer,-92,15.5,"Trout Fish"], 
+    [iFishTrout,fishLayer,-148,-1.5,"Trout Fish"], 
+    [iFishTrout,fishLayer,-188,-1,"Trout Fish"], 
+    [iFishTrout,fishLayer,-200,0,"Trout Fish"], 
+    [iFishTrout,fishLayer,-156.5,99,"Trout Fish"], 
+    [iFishTrout,fishLayer,-158.25,91,"Trout Fish"], 
+    [iFishTrout,fishLayer,-91,65,"Trout Fish"], 
+    [iFishTrout,fishLayer,-80.75,72,"Trout Fish"], 
+    [iFishTrout,fishLayer,-158,82,"Trout Fish"],
+    [iFishTrout,fishLayer,-36.75,101,"Trout Fish"],
+    [iFishTrout,fishLayer,-39.25,178,"Trout Fish"],
+    [iFishTrout,fishLayer,-59,207.25,"Trout Fish"],
+    [iFishTrout,fishLayer,-84,192,"Trout Fish"],
+    [iFishTrout,fishLayer,-113,180.5,"Trout Fish"],
+    [iFishTrout,fishLayer,-133,173,"Trout Fish"],
+    [iFishTrout,fishLayer,-145,167,"Trout Fish"],
+    [iFishTrout,fishLayer,-118,248,"Trout Fish"],
+    [iFishTrout,fishLayer,-123,222.5,"Trout Fish"],
+    [iFishTrout,fishLayer,-136,223.5,"Trout Fish"],
+    [iFishTrout,fishLayer,-205,231.5,"Trout Fish"],
+
+    [iFishPike,fishLayer,-134,13,"Pike Fish"], // ----- Pike
+    [iFishPike,fishLayer,-167.5,44,"Pike Fish"], 
+    [iFishPike,fishLayer,-131,46,"Pike Fish"], 
+    [iFishPike,fishLayer,-210.5,10,"Pike Fish"], 
+    [iFishPike,fishLayer,-116,54,"Pike Fish"], 
+    [iFishPike,fishLayer,-54,42.75,"Pike Fish"], 
+    [iFishPike,fishLayer,-45,42,"Pike Fish"], 
+    [iFishPike,fishLayer,0,46,"Pike Fish"], 
+    [iFishPike,fishLayer,-45,12,"Pike Fish"], 
+    [iFishPike,fishLayer,-89,15.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-151,-1.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-212.5,126,"Pike Fish"], 
+    [iFishPike,fishLayer,-159,88.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-214.5,138,"Pike Fish"], 
+    [iFishPike,fishLayer,-218,149.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-189,148,"Pike Fish"], 
+    [iFishPike,fishLayer,-185,157,"Pike Fish"], 
+    [iFishPike,fishLayer,-97,73,"Pike Fish"], 
+    [iFishPike,fishLayer,-94.25,83,"Pike Fish"], 
+    [iFishPike,fishLayer,-157.25,105,"Pike Fish"], 
+    [iFishPike,fishLayer,-157,80,"Pike Fish"], 
+    [iFishPike,fishLayer,-128,76.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-98.75,98,"Pike Fish"], 
+    [iFishPike,fishLayer,-83.5,103,"Pike Fish"], 
+    [iFishPike,fishLayer,-42,65.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-38,93,"Pike Fish"], 
+    [iFishPike,fishLayer,-40.5,182,"Pike Fish"], 
+    [iFishPike,fishLayer,-62,206.25,"Pike Fish"], 
+    [iFishPike,fishLayer,-113,178,"Pike Fish"], 
+    [iFishPike,fishLayer,-136,172,"Pike Fish"], 
+    [iFishPike,fishLayer,-142,167,"Pike Fish"], 
+    [iFishPike,fishLayer,-151,168,"Pike Fish"], 
+    [iFishPike,fishLayer,-166,150.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-177,132,"Pike Fish"], 
+    [iFishPike,fishLayer,-87,241.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-106,240,"Pike Fish"], 
+    [iFishPike,fishLayer,-124,250,"Pike Fish"], 
+    [iFishPike,fishLayer,-135,221.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-155,249.75,"Pike Fish"], 
+    [iFishPike,fishLayer,-179,246.5,"Pike Fish"], 
+    [iFishPike,fishLayer,-194.5,246,"Pike Fish"], 
+    [iFishPike,fishLayer,-220.5,242,"Pike Fish"], 
+    [iFishPike,fishLayer,-217.75,174,"Pike Fish"], 
+    [iFishPike,fishLayer,-211,229.25,"Pike Fish"], 
+
+    [iFishAtlanticCod,fishLayer,-22,228,"Atlantic Cod Fish"], // ----- Atlantic Cod
+
+    [iFishCatfish,fishLayer,-65,204.75,"Catfish Fish"], // ----- Catfish
+    [iFishCatfish,fishLayer,-80,193.5,"Catfish Fish"], 
+    [iFishCatfish,fishLayer,-133,224,"Catfish Fish"], 
+
+    [iFishWhite,fishLayer,-156,32,"White Fish"], // ----- White
+    [iFishWhite,fishLayer,-131,126,"White Fish"],
+
+    [iFishPerch,fishLayer,-164,9,"Perch Fish"], // ----- Perch
+    [iFishPerch,fishLayer,-169,19,"Perch Fish"],
+    [iFishPerch,fishLayer,-167.5,42,"Perch Fish"],
+    [iFishPerch,fishLayer,-130.75,44,"Perch Fish"],
+    [iFishPerch,fishLayer,-120,36,"Perch Fish"],
+    [iFishPerch,fishLayer,-186.5,27,"Perch Fish"],
+    [iFishPerch,fishLayer,-192,32,"Perch Fish"],
+    [iFishPerch,fishLayer,-205.5,78,"Perch Fish"],
+    [iFishPerch,fishLayer,-214.5,77.25,"Perch Fish"],
+    [iFishPerch,fishLayer,-215.25,90.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-199,82,"Perch Fish"],
+    [iFishPerch,fishLayer,-214.5,103,"Perch Fish"],
+    [iFishPerch,fishLayer,-213,128,"Perch Fish"],
+    [iFishPerch,fishLayer,-208,157,"Perch Fish"],
+    [iFishPerch,fishLayer,-196,136,"Perch Fish"],
+    [iFishPerch,fishLayer,-159,104,"Perch Fish"],
+    [iFishPerch,fishLayer,-218,138,"Perch Fish"],
+    [iFishPerch,fishLayer,-225.5,140,"Perch Fish"],
+    [iFishPerch,fishLayer,-215,151.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-189,150,"Perch Fish"],
+    [iFishPerch,fishLayer,-181,156,"Perch Fish"],
+    [iFishPerch,fishLayer,-95.5,76,"Perch Fish"],
+    [iFishPerch,fishLayer,-93,87,"Perch Fish"],
+    [iFishPerch,fishLayer,-155,78.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-125,76.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-103,81,"Perch Fish"],
+    [iFishPerch,fishLayer,-99.5,93,"Perch Fish"],
+    [iFishPerch,fishLayer,-82.5,101,"Perch Fish"],
+    [iFishPerch,fishLayer,-68,64,"Perch Fish"],
+    [iFishPerch,fishLayer,-46,63.75,"Perch Fish"],
+    [iFishPerch,fishLayer,-68,202.75,"Perch Fish"],
+    [iFishPerch,fishLayer,-163,149.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-171,127,"Perch Fish"],
+    [iFishPerch,fishLayer,-178,163.75,"Perch Fish"],
+    [iFishPerch,fishLayer,-121,250,"Perch Fish"],
+    [iFishPerch,fishLayer,-132.5,220.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-135.75,240,"Perch Fish"],
+    [iFishPerch,fishLayer,-152,250,"Perch Fish"],
+    [iFishPerch,fishLayer,-176,247.5,"Perch Fish"],
+    [iFishPerch,fishLayer,-176,235,"Perch Fish"],
+    [iFishPerch,fishLayer,-193,244,"Perch Fish"],
+    [iFishPerch,fishLayer,-218,253,"Perch Fish"],
+    [iFishPerch,fishLayer,-214,222,"Perch Fish"],
+    [iFishPerch,fishLayer,-217.5,208,"Perch Fish"],
+    [iFishPerch,fishLayer,-217.25,170,"Perch Fish"],
+    [iFishPerch,fishLayer,-214,229.5,"Perch Fish"],
+
+    [iFishRainbow,fishLayer,-171,10.5,"Rainbow Fish"], // ----- Rainbow
+    [iFishRainbow,fishLayer,-38,43.5,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,0,42,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-39,11,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-145,-0.5,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-159.75,86,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-94,65,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-82,76,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-36.75,97,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-37.5,174,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-96,186,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-90,241.5,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-103,241,"Rainbow Fish"],
+    [iFishRainbow,fishLayer,-115,247,"Rainbow Fish"],
+
+    [iFishSalmon,fishLayer,-169,21,"Salmon Fish"], // ----- Salmon
+    [iFishSalmon,fishLayer,-14,74,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-0.5,22,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-14,12.5,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-205,83,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-93,188.5,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-21.4,234,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-182,244.5,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-217.5,172,"Salmon Fish"],
+    [iFishSalmon,fishLayer,-208,230.5,"Salmon Fish"],
+
+    [iFishHaddock,fishLayer,-168.5,23,"Haddock Fish"], // ----- Haddock
+    [iFishHaddock,fishLayer,-129,50,"Haddock Fish"],
+    [iFishHaddock,fishLayer,-187,29,"Haddock Fish"],
+    [iFishHaddock,fishLayer,-206.5,85,"Haddock Fish"],
+    [iFishHaddock,fishLayer,-174,128.5,"Haddock Fish"],
+    [iFishHaddock,fishLayer,-135.25,236,"Haddock Fish"],
+    [iFishHaddock,fishLayer,-173,248.5,"Haddock Fish"],
+    [iFishHaddock,fishLayer,-217,168,"Haddock Fish"],
+
+    [iFishMistyGrouper,fishLayer,-210,14,"Misty Grouper Fish"], // ----- Misty Grouper
+    [iFishMistyGrouper,fishLayer,-198.5,249,"Misty Grouper Fish"], // ----- Misty Grouper
+
+    [iFishBlackGrouper,fishLayer,-210,12,"Dark Grouper Fish"], // ----- Dark Grouper
+    [iFishBlackGrouper,fishLayer,-196.5,248,"Dark Grouper Fish"],
+    
+    [iFishSalmonShark,fishLayer,-11,74.5,"Salmon Shark Fish"], // ----- Salmon Shark
+    [iFishSalmonShark,fishLayer,0,24,"Salmon Shark Fish"],
+    [iFishSalmonShark,fishLayer,-11,12,"Salmon Shark Fish"],
+
+    [iFishArcticChar,fishLayer,-8,75.5,"Arctic Char Fish"], // ----- Arctic Char
+    [iFishArcticChar,fishLayer,-17,11.75,"Arctic Char Fish"],
+    [iFishArcticChar,fishLayer,-21,231,"Arctic Char Fish"],
+    
+    // Feathers ------------------------------------------
+
+    // Farmables -----------------------------------------
+
+];
+
+for (var i = 0; i < markerArray.length; i++) {
+    marker = L.marker([markerArray[i][2],markerArray[i][3]], {icon: markerArray[i][0], title: markerArray[i][4]}).addTo(markerArray[i][1]);
+}
+
+// // Click Map for Coordinates.
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent(e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
