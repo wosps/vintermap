@@ -101,6 +101,28 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+.loader {
+  background-color: #63C7A2;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  /* display: none; */
+}
+
+.loader-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #63C7A2;
+  /* display: none; */
+}
+
+.main-map {
+  display: none;
+}
+
 #sidebar {
   margin-top: 0.5%;
   margin-left: 0.5%;
