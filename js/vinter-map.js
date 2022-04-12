@@ -363,6 +363,9 @@ var markerArray = [
     [iPlantWheat, plantLayer, -195, 28 , "Wheat"],
     [iPlantWheat, plantLayer, -130, 83 , "Wheat"],
     [iPlantWheat, plantLayer, -116, 96 , "Wheat"],
+    [iPlantWheat, plantLayer, -115, 127 , "Wheat"],
+    [iPlantWheat, plantLayer, -115, 137 , "Wheat"],
+    [iPlantWheat, plantLayer, -124, 142 , "Wheat"],
 
     [iPlantCloudberry, plantLayer, -89, 71, "Cloudberry"], // ----- Cloudberry
 
@@ -385,6 +388,10 @@ var markerArray = [
 
     [iPlantKingcup, plantLayer, -123, 118, "Kingcup"], // ----- Kingcup
     [iPlantKingcup, plantLayer, -126, 133, "Kingcup"],
+    
+    [iPlantHepatica, plantLayer, -115, 124, "Hepatica"], // ----- Hepatica
+    
+    [iPlantWindflower, plantLayer, -118, 147, "Windflower"], // ----- Windflower
 
 ];
 
