@@ -21,7 +21,7 @@ var mapBounds = new L.LatLngBounds( // ?
 
 map.fitBounds(mapBounds);
 
-L.tileLayer('F:/Projects/Images/vinter-map/tiles/{z}/{x}/{y}.png', {
+L.tileLayer('img/tiles/{z}/{x}/{y}.png', {
     minZoom: 1,
     maxZoom: 5,
     tms: false,
@@ -44,22 +44,22 @@ var portIcon = L.Icon.extend({
     }
 })
 
-var iFishPike = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/pike-fish.png'});
-var iFishTrout = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/trout-fish.png'});
-var iFishRed = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/red-fish.png'});
-var iFishPerch = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/perch-fish.png'});
-var iFishWhite = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/white-fish.png'});
-var iFishRainbow = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/rainbow-fish.png'});
-var iFishSalmon = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/salmon-fish.png'});
-var iFishHaddock = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/haddock-fish.png'});
-var iFishMistyGrouper = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/mistygrouper-fish.png'});
-var iFishBlackGrouper = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/blackgrouper-fish.png'});
-var iFishSalmonShark = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/salmonshark-fish.png'});
-var iFishArcticChar = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/arcticchar-fish.png'});
-var iFishCatfish = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/catfish-fish.png'});
-var iFishAtlanticCod = new itemIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/atlanticcod-fish.png'});
+var iFishPike = new itemIcon({iconUrl: 'img/icons/pike-fish.png'});
+var iFishTrout = new itemIcon({iconUrl: 'img/icons/trout-fish.png'});
+var iFishRed = new itemIcon({iconUrl: 'img/icons/red-fish.png'});
+var iFishPerch = new itemIcon({iconUrl: 'img/icons/perch-fish.png'});
+var iFishWhite = new itemIcon({iconUrl: 'img/icons/white-fish.png'});
+var iFishRainbow = new itemIcon({iconUrl: 'img/icons/rainbow-fish.png'});
+var iFishSalmon = new itemIcon({iconUrl: 'img/icons/salmon-fish.png'});
+var iFishHaddock = new itemIcon({iconUrl: 'img/icons/haddock-fish.png'});
+var iFishMistyGrouper = new itemIcon({iconUrl: 'img/icons/mistygrouper-fish.png'});
+var iFishBlackGrouper = new itemIcon({iconUrl: 'img/icons/blackgrouper-fish.png'});
+var iFishSalmonShark = new itemIcon({iconUrl: 'img/icons/salmonshark-fish.png'});
+var iFishArcticChar = new itemIcon({iconUrl: 'img/icons/arcticchar-fish.png'});
+var iFishCatfish = new itemIcon({iconUrl: 'img/icons/catfish-fish.png'});
+var iFishAtlanticCod = new itemIcon({iconUrl: 'img/icons/atlanticcod-fish.png'});
 
-var iPort = new portIcon({iconUrl: 'F:/Projects/Images/vinter-map/icons/boat.png'});
+var iPort = new portIcon({iconUrl: 'img/icons/boat.png'});
 
 // Marker Creation Loop -----------------------------------------------------------------------------
 
