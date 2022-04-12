@@ -89,6 +89,40 @@ var iFishAtlanticCod = new itemIcon({
     iconUrl: 'img/icons/atlanticcod-fish.png'
 });
 
+var iPlantWheat = new itemIcon({
+    iconUrl: 'img/icons/wheat-plant.png'
+});
+var iPlantCloudberry = new itemIcon({
+    iconUrl: 'img/icons/cloudberry-plant.png'
+});
+var iPlantRaspberry = new itemIcon({
+    iconUrl: 'img/icons/raspberry-plant.png'
+});
+var iPlantBlackberry = new itemIcon({
+    iconUrl: 'img/icons/blackberry-plant.png'
+});
+var iPlantSugarBeet = new itemIcon({
+    iconUrl: 'img/icons/sugarbeet-plant.png'
+});
+var iPlantKingcup = new itemIcon({
+    iconUrl: 'img/icons/kingcup-plant.png'
+});
+var iPlantHepatica = new itemIcon({
+    iconUrl: 'img/icons/hepatica-plant.png'
+});
+var iPlantWindflower = new itemIcon({
+    iconUrl: 'img/icons/windflower-plant.png'
+});
+var iPlantPoppy = new itemIcon({
+    iconUrl: 'img/icons/poppy-plant.png'
+});
+var iPlantBlackLotus = new itemIcon({
+    iconUrl: 'img/icons/blacklotus-plant.png'
+});
+var iPlantMez = new itemIcon({
+    iconUrl: 'img/icons/mez-plant.png'
+});
+
 var iPort = new portIcon({
     iconUrl: 'img/icons/boat.png'
 });
@@ -97,10 +131,14 @@ var iPort = new portIcon({
 
 var portLayer = L.layerGroup([]);
 var fishLayer = L.layerGroup([]);
+var featherLayer = L.layerGroup([]);
+var plantLayer = L.layerGroup([]);
 
 var overlayMaps = {
     "Ports": portLayer,
-    "Fish": fishLayer
+    "Fish": fishLayer,
+    "Feathers": featherLayer,
+    "Plants": plantLayer
 };
 
 var markerArray = [
@@ -309,7 +347,44 @@ var markerArray = [
 
     // Feathers ------------------------------------------
 
-    // Farmables -----------------------------------------
+
+
+    // Plants -----------------------------------------
+
+    [iPlantWheat, plantLayer, -57, 38, "Wheat"], // ----- Wheat
+    [iPlantWheat, plantLayer, -75, 28, "Wheat"],
+    [iPlantWheat, plantLayer, -87, 22, "Wheat"],
+    [iPlantWheat, plantLayer, -89, 32, "Wheat"],
+    [iPlantWheat, plantLayer, -115, 49, "Wheat"],
+    [iPlantWheat, plantLayer, -136, 46, "Wheat"],
+    [iPlantWheat, plantLayer, -127, 31, "Wheat"],
+    [iPlantWheat, plantLayer, -130, 23, "Wheat"],
+    [iPlantWheat, plantLayer, -152, 22 , "Wheat"],
+    [iPlantWheat, plantLayer, -195, 28 , "Wheat"],
+    [iPlantWheat, plantLayer, -130, 83 , "Wheat"],
+    [iPlantWheat, plantLayer, -116, 96 , "Wheat"],
+
+    [iPlantCloudberry, plantLayer, -89, 71, "Cloudberry"], // ----- Cloudberry
+
+    [iPlantRaspberry, plantLayer, -194, 96, "Raspberry"], // ----- Raspberry
+    [iPlantRaspberry, plantLayer, -171, 91, "Raspberry"],
+    [iPlantRaspberry, plantLayer, -201, 136, "Raspberry"],
+    [iPlantRaspberry, plantLayer, -115, 100, "Raspberry"],
+
+    [iPlantBlackberry, plantLayer, -171, 95, "Blackberry"], // ----- Blackberry
+    [iPlantBlackberry, plantLayer, -199, 128, "Blackberry"],
+    [iPlantBlackberry, plantLayer, -130, 85, "Blackberry"],
+    [iPlantBlackberry, plantLayer, -116, 98, "Blackberry"],
+
+    [iPlantPoppy, plantLayer, -245, 111, "Poppy"], // ----- Poppy
+    [iPlantPoppy, plantLayer, -151, 87, "Poppy"],
+
+    [iPlantBlackLotus, plantLayer, -245, 108, "Black Lotus"], // ----- Black Lotus
+
+    [iPlantSugarBeet, plantLayer, -116, 94, "Sugar Beet"], // ----- Sugar Beet
+
+    [iPlantKingcup, plantLayer, -123, 118, "Kingcup"], // ----- Kingcup
+    [iPlantKingcup, plantLayer, -126, 133, "Kingcup"],
 
 ];
 
@@ -320,14 +395,14 @@ for (var i = 0; i < markerArray.length; i++) {
     }).addTo(markerArray[i][1]);
 }
 
-// // Click Map for Coordinates.
-// var popup = L.popup();
+// Click Map for Coordinates.
+var popup = L.popup();
 
-// function onMapClick(e) {
-//     popup
-//         .setLatLng(e.latlng)
-//         .setContent(e.latlng.toString())
-//         .openOn(map);
-// }
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent(e.latlng.toString())
+        .openOn(map);
+}
 
-// map.on('click', onMapClick);
+map.on('click', onMapClick);

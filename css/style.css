@@ -106,7 +106,7 @@ body {
   color: white;
   height: 100vh;
   width: 100vw;
-  /* display: none; */
+  display: none;
 }
 
 .loader-content {
@@ -116,11 +116,11 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #63C7A2;
-  /* display: none; */
+  display: none;
 }
 
 .main-map {
-  display: none;
+  /* display: none; */
 }
 
 #sidebar {
@@ -133,7 +133,7 @@ body {
   top: 0;
   left: 0;
   background-color: #1C1D43;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: white;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
@@ -175,6 +175,45 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+   /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  width: 220%;
+  font-size: 17px;
+  background-color: #1C1D43;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
+
+.tooltip .tooltipText::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
 }
 
 #map {
