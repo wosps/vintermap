@@ -1,5 +1,4 @@
 map.addLayer(portLayer);
-map.addLayer(plantLayer);
 
 var togglePort = new Boolean(true);
 var toggleFish = new Boolean(false);
