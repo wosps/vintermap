@@ -126,6 +126,31 @@ var iPlantChanterelles = new itemIcon({
     iconUrl: 'img/icons/chanterelles-plant.png'
 });
 
+var iFeatherHazelHen = new itemIcon({
+    iconUrl: 'img/icons/hazelhen-feather.png'
+});
+var iFeatherPristineHazelHen = new itemIcon({
+    iconUrl: 'img/icons/hazelhen-pristine-feather.png'
+});
+var iFeatherKiiruna = new itemIcon({
+    iconUrl: 'img/icons/kiiruna-feather.png'
+});
+var iFeatherPristineKiiruna = new itemIcon({
+    iconUrl: 'img/icons/kiiruna-pristine-feather.png'
+});
+var iFeatherPeacock = new itemIcon({
+    iconUrl: 'img/icons/peacock-feather.png'
+});
+var iFeatherPristinePeacock = new itemIcon({
+    iconUrl: 'img/icons/peacock-pristine-feather.png'
+});
+var iFeatherCapercaillie = new itemIcon({
+    iconUrl: 'img/icons/capercaillie-feather.png'
+});
+var iFeatherPristineCapercaillie = new itemIcon({
+    iconUrl: 'img/icons/capercaillie-pristine-feather.png'
+});
+
 var iPort = new portIcon({
     iconUrl: 'img/icons/boat.png'
 });
@@ -355,6 +380,54 @@ var markerArray = [
     // Pristine Peacock Feather
     // Pristine Capercaillie Feather
 
+    [iFeatherPristineCapercaillie, featherLayer, -204, 28, "Pristine Capercaillie Feather"], // ----- Pristine Capercaillie Feather
+    [iFeatherPristineCapercaillie, featherLayer, -145, 6, "Pristine Capercaillie Feather"],
+    [iFeatherPristineCapercaillie, featherLayer, -106, 29, "Pristine Capercaillie Feather"],
+    [iFeatherPristineCapercaillie, featherLayer, -53, 96, "Pristine Capercaillie Feather"],
+    [iFeatherPristineCapercaillie, featherLayer, -51, 167, "Pristine Capercaillie Feather"],
+
+    [iFeatherCapercaillie, featherLayer, -204, 25, "Capercaillie Feather"], // ----- Capercaillie Feather
+    [iFeatherCapercaillie, featherLayer, -145, 3, "Capercaillie Feather"],
+    [iFeatherCapercaillie, featherLayer, -106, 26, "Capercaillie Feather"],
+    [iFeatherCapercaillie, featherLayer, -53, 93, "Capercaillie Feather"],
+    [iFeatherCapercaillie, featherLayer, -51, 164, "Capercaillie Feather"],
+
+    [iFeatherPristineHazelHen, featherLayer, -134, 37, "Pristine Hazel Hen Feather"], // ----- Pristine Hazel Hen Feather
+    [iFeatherPristineHazelHen, featherLayer, -104, 24.5, "Pristine Hazel Hen Feather"],
+    [iFeatherPristineHazelHen, featherLayer, -101, 161.25, "Pristine Hazel Hen Feather"],
+    [iFeatherPristineHazelHen, featherLayer, -114, 95, "Pristine Hazel Hen Feather"],
+    [iFeatherPristineHazelHen, featherLayer, -132, 149, "Pristine Hazel Hen Feather"],
+    [iFeatherPristineHazelHen, featherLayer, -169, 91, "Pristine Hazel Hen Feather"],
+    [iFeatherPristineHazelHen, featherLayer, -198, 210.5, "Pristine Hazel Hen Feather"],
+    [iFeatherPristineHazelHen, featherLayer, -149, 214.5, "Pristine Hazel Hen Feather"],
+
+    [iFeatherHazelHen, featherLayer, -134, 40, "Hazel Hen Feather"], // ----- Hazel Hen Feather
+    [iFeatherHazelHen, featherLayer, -104, 27.5, "Hazel Hen Feather"], 
+    [iFeatherHazelHen, featherLayer, -101, 163.75, "Hazel Hen Feather"], 
+    [iFeatherHazelHen, featherLayer, -114, 97, "Hazel Hen Feather"], 
+    [iFeatherHazelHen, featherLayer, -132, 152, "Hazel Hen Feather"], 
+    [iFeatherHazelHen, featherLayer, -169, 95, "Hazel Hen Feather"], 
+    [iFeatherHazelHen, featherLayer, -198, 213.5, "Hazel Hen Feather"], 
+    [iFeatherHazelHen, featherLayer, -149, 216.5, "Hazel Hen Feather"], 
+
+    [iFeatherPristineKiiruna, featherLayer, -22, 26, "Pristine Kiiruna Feather"], // ----- Pristine Kiiruna Feather
+    [iFeatherPristineKiiruna, featherLayer, -17, 43, "Pristine Kiiruna Feather"],
+    [iFeatherPristineKiiruna, featherLayer, -8, 60, "Pristine Kiiruna Feather"],
+    [iFeatherPristineKiiruna, featherLayer, -63, 124, "Pristine Kiiruna Feather"],
+    [iFeatherPristineKiiruna, featherLayer, -74, 161, "Pristine Kiiruna Feather"],
+    
+    [iFeatherKiiruna, featherLayer, -22, 23, "Kiiruna Feather"], // ----- Kiiruna Feather
+    [iFeatherKiiruna, featherLayer, -17, 40, "Kiiruna Feather"], 
+    [iFeatherKiiruna, featherLayer, -8, 57, "Kiiruna Feather"], 
+    [iFeatherKiiruna, featherLayer, -63, 121, "Kiiruna Feather"], 
+    [iFeatherKiiruna, featherLayer, -74, 158, "Kiiruna Feather"], 
+
+    [iFeatherPristinePeacock, featherLayer, -215, 147, "Pristine Peacock Feather"], // ----- Pristine Peacock Letter
+    [iFeatherPristinePeacock, featherLayer, -240, 122, "Pristine Peacock Feather"],
+
+    [iFeatherPeacock, featherLayer, -215, 144, "Peacock Feather"], // ----- Peacock Feather
+    [iFeatherPeacock, featherLayer, -240, 119, "Peacock Feather"],
+
 
     // Plants -----------------------------------------
 
@@ -385,16 +458,16 @@ var markerArray = [
     [iPlantCloudberries, plantLayer, -96, 122, "Cloudberries"],
     [iPlantCloudberries, plantLayer, -99, 146, "Cloudberries"],
     [iPlantCloudberries, plantLayer, -110, 175, "Cloudberries"],
-    [iPlantCloudberries, plantLayer, -149, 220, "Cloudberries"],
+    [iPlantCloudberries, plantLayer, -149, 219, "Cloudberries"],
 
     [iPlantRaspberries, plantLayer, -194, 96, "Raspberries"], // ----- Raspberries
     [iPlantRaspberries, plantLayer, -171, 91, "Raspberries"],
     [iPlantRaspberries, plantLayer, -201, 136, "Raspberries"],
-    [iPlantRaspberries, plantLayer, -115, 100, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -114, 99, "Raspberries"],
     [iPlantRaspberries, plantLayer, -196, 223, "Raspberries"],
     [iPlantRaspberries, plantLayer, -188, 208, "Raspberries"],
     [iPlantRaspberries, plantLayer, -177, 218, "Raspberries"],
-    [iPlantRaspberries, plantLayer, -149, 211, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -149, 212, "Raspberries"],
 
     [iPlantBlackberries, plantLayer, -171, 95, "Blackberries"], // ----- Blackberries
     [iPlantBlackberries, plantLayer, -199, 128, "Blackberries"],
@@ -438,7 +511,7 @@ var markerArray = [
 
     [iPlantMezereon, plantLayer, -211, 240, "Mezereons"], // ----- Mezereons
 
-    [iPlantChanterelles, plantLayer, -198, 19, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -200, 19, "Chanterelles"], // ----- Chanterelles
     [iPlantChanterelles, plantLayer, -152, 20, "Chanterelles"], // ----- Chanterelles
     [iPlantChanterelles, plantLayer, -74, 37.5, "Chanterelles"], // ----- Chanterelles
     [iPlantChanterelles, plantLayer, -63, 38.5, "Chanterelles"], // ----- Chanterelles

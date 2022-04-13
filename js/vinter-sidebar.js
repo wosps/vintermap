@@ -27,5 +27,11 @@ document.addEventListener('click', function handleClick(e) {
             } else if (t.classList.contains("plant") && togglePlant == true) {
                 map.removeLayer(plantLayer);
                 togglePlant = false;
+            } else if (t.classList.contains("feather") && toggleFeather == false) {
+                map.addLayer(featherLayer);
+                toggleFeather = true;
+            } else if (t.classList.contains("feather") && toggleFeather== true) {
+                map.removeLayer(featherLayer);
+                toggleFeather = false;
             }
 });
