@@ -122,6 +122,9 @@ var iPlantBlackLotus = new itemIcon({
 var iPlantMezereon = new itemIcon({
     iconUrl: 'img/icons/mez-plant.png'
 });
+var iPlantChanterelles = new itemIcon({
+    iconUrl: 'img/icons/chanterelles-plant.png'
+});
 
 var iPort = new portIcon({
     iconUrl: 'img/icons/boat.png'
@@ -347,6 +350,10 @@ var markerArray = [
 
     // Feathers ------------------------------------------
 
+    // Pristine Hazel Hen Feather
+    // Pristine Kiiruna Feather
+    // Pristine Peacock Feather
+    // Pristine Capercaillie Feather
 
 
     // Plants -----------------------------------------
@@ -429,7 +436,16 @@ var markerArray = [
     [iPlantWindflower, plantLayer, -200, 209, "Windflower"],
     [iPlantWindflower, plantLayer, -123, 242, "Windflower"],
 
-    [iPlantMezereon, plantLayer, -211, 240, "Mezereons"],
+    [iPlantMezereon, plantLayer, -211, 240, "Mezereons"], // ----- Mezereons
+
+    [iPlantChanterelles, plantLayer, -198, 19, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -152, 20, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -74, 37.5, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -63, 38.5, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -53, 30, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -55, 18, "Chanterelles"], // ----- Chanterelles
+    [iPlantChanterelles, plantLayer, -65, 23, "Chanterelles"], // ----- Chanterelles
+
 ];
 
 for (var i = 0; i < markerArray.length; i++) {
