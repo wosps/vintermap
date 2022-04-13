@@ -529,13 +529,13 @@ for (var i = 0; i < markerArray.length; i++) {
 }
 
 // Click Map for Coordinates.
-var popup = L.popup();
+// var popup = L.popup();
 
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent(e.latlng.toString())
-        .openOn(map);
-}
+// function onMapClick(e) {
+//     popup
+//         .setLatLng(e.latlng)
+//         .setContent(e.latlng.toString())
+//         .openOn(map);
+// }
 
-map.on('click', onMapClick);
+// map.on('click', onMapClick);

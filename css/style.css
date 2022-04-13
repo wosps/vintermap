@@ -182,21 +182,29 @@ body {
   width: 90%;
 }
 
-.question-icon {
-  font-size: 60px;
+.info-box {
+  width: 220px;
+  height: 150px;
+  padding: 20px;
+  background-color: var(--primary-colour);
+  color: white;
+  border-radius: 10px;
+  font-size: 8px;
   margin-right: 1%;
   position: fixed;
   z-index: 10;
-  bottom: 0;
+  bottom: 15px;
   right: 0;
-  border-radius: 20%;
 }
 
-.question-icon .fa-solid {
-  border-radius: 50%;
-  color: var(--primary-colour);
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
+.info-box h1{
+  padding-bottom: 5px;
+  border-bottom: solid .5px #27285c;
+}
+
+.info-box p {
+  padding-top: 5px;
+  font-size: 13px;
 }
 
 .tooltip {
@@ -205,7 +213,6 @@ body {
   font-weight: 700;
 }
 
-/* Tooltip text */
 .tooltip .tooltipText {
   visibility: hidden;
   width: 120px;
@@ -214,7 +221,6 @@ body {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
   left: 110%;
@@ -223,7 +229,6 @@ body {
   background-color: var(--primary-colour);
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltipText {
   visibility: visible;
 }
@@ -232,7 +237,7 @@ body {
   content: " ";
   position: absolute;
   top: 50%;
-  right: 100%; /* To the left of the tooltip */
+  right: 100%;
   margin-top: 0px;
   border-width: 5px;
   border-style: solid;
@@ -243,4 +248,18 @@ body {
     height: 100vh;
     background-color: #6451db;
     z-index: 5;
+}
+
+.green-text {
+  color: var(--primary-accent-colour);
+}
+
+a.green-text {
+  color: var(--primary-accent-colour);
+}
+
+@media only screen and (max-width: 800px) {
+    .info-box {
+      display: none;
+    }
 }
