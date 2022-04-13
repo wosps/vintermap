@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --primary-colour: #1C1D43;
+  --secondary-colour: #ffffff;
+  --primary-accent-colour: #63C7A2;
+}
+
 /* Modern CSS Reset - https://piccalil.li/blog/a-modern-css-reset/ */
 /* Box sizing rules */
 *,
@@ -98,11 +106,11 @@ a:active {
 /* Reset Complete! */
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .loader {
-  background-color: #63C7A2;
+  background-color: var(--primary-accent-colour);
   color: white;
   height: 100vh;
   width: 100vw;
@@ -115,12 +123,8 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: #63C7A2;
+  background-color: var(--primary-accent-colour);
   display: none;
-}
-
-.main-map {
-  /* display: none; */
 }
 
 #sidebar {
@@ -132,7 +136,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: #1C1D43;
+  background-color: var(--primary-colour);
   /* overflow-x: hidden; */
   color: white;
   border-radius: 10px;
@@ -152,10 +156,11 @@ body {
 
 .sidebar-bottom {
   border-top: 3px solid #27285c !important;
-  background-color: #1C1D43;
+  background-color: var(--primary-colour);
   bottom: 0;
   width: 100%;
   position: absolute;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .sidebar-top {
@@ -163,7 +168,7 @@ body {
 }
 
 .sidebar-btn:hover {
-  background-color: #63C7A2;
+  background-color: var(--primary-accent-colour);
 }
 
 .active {
@@ -177,9 +182,27 @@ body {
   width: 90%;
 }
 
+.question-icon {
+  font-size: 60px;
+  margin-right: 1%;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  border-radius: 20%;
+}
+
+.question-icon .fa-solid {
+  border-radius: 50%;
+  color: var(--primary-colour);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
+  font-weight: 700;
 }
 
 /* Tooltip text */
@@ -195,9 +218,9 @@ body {
   position: absolute;
   z-index: 1;
   left: 110%;
-  width: 220%;
+  width: 100%;
   font-size: 17px;
-  background-color: #1C1D43;
+  background-color: var(--primary-colour);
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -210,7 +233,7 @@ body {
   position: absolute;
   top: 50%;
   right: 100%; /* To the left of the tooltip */
-  margin-top: -5px;
+  margin-top: 0px;
   border-width: 5px;
   border-style: solid;
   border-color: transparent black transparent transparent;

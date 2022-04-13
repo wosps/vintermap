@@ -359,25 +359,44 @@ var markerArray = [
     [iPlantWheat, plantLayer, -136, 46, "Wheat"],
     [iPlantWheat, plantLayer, -127, 31, "Wheat"],
     [iPlantWheat, plantLayer, -130, 23, "Wheat"],
-    [iPlantWheat, plantLayer, -152, 22 , "Wheat"],
-    [iPlantWheat, plantLayer, -195, 28 , "Wheat"],
-    [iPlantWheat, plantLayer, -130, 83 , "Wheat"],
-    [iPlantWheat, plantLayer, -116, 96 , "Wheat"],
-    [iPlantWheat, plantLayer, -115, 127 , "Wheat"],
-    [iPlantWheat, plantLayer, -115, 137 , "Wheat"],
-    [iPlantWheat, plantLayer, -124, 142 , "Wheat"],
+    [iPlantWheat, plantLayer, -152, 22, "Wheat"],
+    [iPlantWheat, plantLayer, -195, 28, "Wheat"],
+    [iPlantWheat, plantLayer, -130, 83, "Wheat"],
+    [iPlantWheat, plantLayer, -116, 96, "Wheat"],
+    [iPlantWheat, plantLayer, -115, 127, "Wheat"],
+    [iPlantWheat, plantLayer, -115, 137, "Wheat"],
+    [iPlantWheat, plantLayer, -124, 142, "Wheat"],
+    [iPlantWheat, plantLayer, -210, 175.5, "Wheat"],
+    [iPlantWheat, plantLayer, -200, 212, "Wheat"],
+    [iPlantWheat, plantLayer, -170, 230, "Wheat"],
+    [iPlantWheat, plantLayer, -165, 239, "Wheat"],
+    [iPlantWheat, plantLayer, -140, 219, "Wheat"],
+    [iPlantWheat, plantLayer, -151, 213, "Wheat"],
+    [iPlantWheat, plantLayer, -123, 240, "Wheat"],
 
     [iPlantCloudberry, plantLayer, -89, 71, "Cloudberry"], // ----- Cloudberry
+    [iPlantCloudberry, plantLayer, -96, 122, "Cloudberry"],
+    [iPlantCloudberry, plantLayer, -99, 146, "Cloudberry"],
+    [iPlantCloudberry, plantLayer, -110, 175, "Cloudberry"],
+    [iPlantCloudberry, plantLayer, -149, 220, "Cloudberry"],
 
     [iPlantRaspberry, plantLayer, -194, 96, "Raspberry"], // ----- Raspberry
     [iPlantRaspberry, plantLayer, -171, 91, "Raspberry"],
     [iPlantRaspberry, plantLayer, -201, 136, "Raspberry"],
     [iPlantRaspberry, plantLayer, -115, 100, "Raspberry"],
+    [iPlantRaspberry, plantLayer, -196, 223, "Raspberry"],
+    [iPlantRaspberry, plantLayer, -188, 208, "Raspberry"],
+    [iPlantRaspberry, plantLayer, -177, 218, "Raspberry"],
+    [iPlantRaspberry, plantLayer, -149, 211, "Raspberry"],
 
     [iPlantBlackberry, plantLayer, -171, 95, "Blackberry"], // ----- Blackberry
     [iPlantBlackberry, plantLayer, -199, 128, "Blackberry"],
     [iPlantBlackberry, plantLayer, -130, 85, "Blackberry"],
     [iPlantBlackberry, plantLayer, -116, 98, "Blackberry"],
+    [iPlantBlackberry, plantLayer, -200, 215, "Blackberry"],
+    [iPlantBlackberry, plantLayer, -165, 242, "Blackberry"],
+    [iPlantBlackberry, plantLayer, -165, 242, "Blackberry"],
+    [iPlantBlackberry, plantLayer, -151, 215.5, "Blackberry"],
 
     [iPlantPoppy, plantLayer, -245, 111, "Poppy"], // ----- Poppy
     [iPlantPoppy, plantLayer, -151, 87, "Poppy"],
@@ -385,13 +404,34 @@ var markerArray = [
     [iPlantBlackLotus, plantLayer, -245, 108, "Black Lotus"], // ----- Black Lotus
 
     [iPlantSugarBeet, plantLayer, -116, 94, "Sugar Beet"], // ----- Sugar Beet
+    [iPlantSugarBeet, plantLayer, -151, 218, "Sugar Beet"],
 
     [iPlantKingcup, plantLayer, -123, 118, "Kingcup"], // ----- Kingcup
     [iPlantKingcup, plantLayer, -126, 133, "Kingcup"],
-    
+    [iPlantKingcup, plantLayer, -99, 160, "Kingcup"],
+    [iPlantKingcup, plantLayer, -116, 169, "Kingcup"],
+    [iPlantKingcup, plantLayer, -117, 182, "Kingcup"],
+    [iPlantKingcup, plantLayer, -132, 167, "Kingcup"],
+    [iPlantKingcup, plantLayer, -212, 174, "Kingcup"],
+    [iPlantKingcup, plantLayer, -213, 235, "Kingcup"],
+    [iPlantKingcup, plantLayer, -125, 239, "Kingcup"],
+
     [iPlantHepatica, plantLayer, -115, 124, "Hepatica"], // ----- Hepatica
-    
+    [iPlantHepatica, plantLayer, -57, 90, "Hepatica"],
+    [iPlantHepatica, plantLayer, -99, 162.5, "Hepatica"],
+    [iPlantHepatica, plantLayer, -212, 177, "Hepatica"],
+    [iPlantHepatica, plantLayer, -125, 241, "Hepatica"],
+
     [iPlantWindflower, plantLayer, -118, 147, "Windflower"], // ----- Windflower
+    [iPlantWindflower, plantLayer, -57, 93, "Windflower"],
+    [iPlantWindflower, plantLayer, -99, 165, "Windflower"],
+    [iPlantWindflower, plantLayer, -210, 178.5, "Windflower"],
+    [iPlantWindflower, plantLayer, -200, 209, "Windflower"],
+    [iPlantWindflower, plantLayer, -123, 242, "Windflower"],
+
+    [iPlantMez, plantLayer, -211, 240, "Mez"],
+
+
 
 ];
 
