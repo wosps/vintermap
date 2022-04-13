@@ -92,13 +92,13 @@ var iFishAtlanticCod = new itemIcon({
 var iPlantWheat = new itemIcon({
     iconUrl: 'img/icons/wheat-plant.png'
 });
-var iPlantCloudberry = new itemIcon({
+var iPlantCloudberries = new itemIcon({
     iconUrl: 'img/icons/cloudberry-plant.png'
 });
-var iPlantRaspberry = new itemIcon({
+var iPlantRaspberries = new itemIcon({
     iconUrl: 'img/icons/raspberry-plant.png'
 });
-var iPlantBlackberry = new itemIcon({
+var iPlantBlackberries = new itemIcon({
     iconUrl: 'img/icons/blackberry-plant.png'
 });
 var iPlantSugarBeet = new itemIcon({
@@ -119,7 +119,7 @@ var iPlantPoppy = new itemIcon({
 var iPlantBlackLotus = new itemIcon({
     iconUrl: 'img/icons/blacklotus-plant.png'
 });
-var iPlantMez = new itemIcon({
+var iPlantMezereon = new itemIcon({
     iconUrl: 'img/icons/mez-plant.png'
 });
 
@@ -156,194 +156,194 @@ var markerArray = [
     [iPort, portLayer, -211, 256, "Pix's Island"],
 
     // Fish ---------------------------------------------
-    [iFishRed, fishLayer, -129, 14, "Red Fish"], // ----- Red
-    [iFishRed, fishLayer, -194, 32.5, "Red Fish"],
-    [iFishRed, fishLayer, -86.5, 43.25, "Red Fish"],
-    [iFishRed, fishLayer, -197, 0.5, "Red Fish"],
+    [iFishRed, fishLayer, -129, 14, "Redfish"], // ----- Red
+    [iFishRed, fishLayer, -194, 32.5, "Redfish"],
+    [iFishRed, fishLayer, -86.5, 43.25, "Redfish"],
+    [iFishRed, fishLayer, -197, 0.5, "Redfish"],
 
-    [iFishTrout, fishLayer, -131.5, 14, "Trout Fish"], // ----- Trout
-    [iFishTrout, fishLayer, -169, 10.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -131, 50, "Trout Fish"],
-    [iFishTrout, fishLayer, -119, 34, "Trout Fish"],
-    [iFishTrout, fishLayer, -114, 17, "Trout Fish"],
-    [iFishTrout, fishLayer, -196, 33, "Trout Fish"],
-    [iFishTrout, fishLayer, -118, 54, "Trout Fish"],
-    [iFishTrout, fishLayer, -88.5, 43.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -68.25, 46.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -56, 43, "Trout Fish"],
-    [iFishTrout, fishLayer, -41, 41.5, "Trout Fish"],
-    [iFishTrout, fishLayer, 0, 44, "Trout Fish"],
-    [iFishTrout, fishLayer, -42, 11.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -92, 15.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -148, -1.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -188, -1, "Trout Fish"],
-    [iFishTrout, fishLayer, -200, 0, "Trout Fish"],
-    [iFishTrout, fishLayer, -156.5, 99, "Trout Fish"],
-    [iFishTrout, fishLayer, -158.25, 91, "Trout Fish"],
-    [iFishTrout, fishLayer, -91, 65, "Trout Fish"],
-    [iFishTrout, fishLayer, -80.75, 72, "Trout Fish"],
-    [iFishTrout, fishLayer, -158, 82, "Trout Fish"],
-    [iFishTrout, fishLayer, -36.75, 101, "Trout Fish"],
-    [iFishTrout, fishLayer, -39.25, 178, "Trout Fish"],
-    [iFishTrout, fishLayer, -59, 207.25, "Trout Fish"],
-    [iFishTrout, fishLayer, -84, 192, "Trout Fish"],
-    [iFishTrout, fishLayer, -113, 180.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -133, 173, "Trout Fish"],
-    [iFishTrout, fishLayer, -145, 167, "Trout Fish"],
-    [iFishTrout, fishLayer, -118, 248, "Trout Fish"],
-    [iFishTrout, fishLayer, -123, 222.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -136, 223.5, "Trout Fish"],
-    [iFishTrout, fishLayer, -205, 231.5, "Trout Fish"],
+    [iFishTrout, fishLayer, -131.5, 14, "Trout"], // ----- Trout
+    [iFishTrout, fishLayer, -169, 10.5, "Trout"],
+    [iFishTrout, fishLayer, -131, 50, "Trout"],
+    [iFishTrout, fishLayer, -119, 34, "Trout"],
+    [iFishTrout, fishLayer, -114, 17, "Trout"],
+    [iFishTrout, fishLayer, -196, 33, "Trout"],
+    [iFishTrout, fishLayer, -118, 54, "Trout"],
+    [iFishTrout, fishLayer, -88.5, 43.5, "Trout"],
+    [iFishTrout, fishLayer, -68.25, 46.5, "Trout"],
+    [iFishTrout, fishLayer, -56, 43, "Trout"],
+    [iFishTrout, fishLayer, -41, 41.5, "Trout"],
+    [iFishTrout, fishLayer, 0, 44, "Trout"],
+    [iFishTrout, fishLayer, -42, 11.5, "Trout"],
+    [iFishTrout, fishLayer, -92, 15.5, "Trout"],
+    [iFishTrout, fishLayer, -148, -1.5, "Trout"],
+    [iFishTrout, fishLayer, -188, -1, "Trout"],
+    [iFishTrout, fishLayer, -200, 0, "Trout"],
+    [iFishTrout, fishLayer, -156.5, 99, "Trout"],
+    [iFishTrout, fishLayer, -158.25, 91, "Trout"],
+    [iFishTrout, fishLayer, -91, 65, "Trout"],
+    [iFishTrout, fishLayer, -80.75, 72, "Trout"],
+    [iFishTrout, fishLayer, -158, 82, "Trout"],
+    [iFishTrout, fishLayer, -36.75, 101, "Trout"],
+    [iFishTrout, fishLayer, -39.25, 178, "Trout"],
+    [iFishTrout, fishLayer, -59, 207.25, "Trout"],
+    [iFishTrout, fishLayer, -84, 192, "Trout"],
+    [iFishTrout, fishLayer, -113, 180.5, "Trout"],
+    [iFishTrout, fishLayer, -133, 173, "Trout"],
+    [iFishTrout, fishLayer, -145, 167, "Trout"],
+    [iFishTrout, fishLayer, -118, 248, "Trout"],
+    [iFishTrout, fishLayer, -123, 222.5, "Trout"],
+    [iFishTrout, fishLayer, -136, 223.5, "Trout"],
+    [iFishTrout, fishLayer, -205, 231.5, "Trout"],
 
-    [iFishPike, fishLayer, -134, 13, "Pike Fish"], // ----- Pike
-    [iFishPike, fishLayer, -167.5, 44, "Pike Fish"],
-    [iFishPike, fishLayer, -131, 46, "Pike Fish"],
-    [iFishPike, fishLayer, -210.5, 10, "Pike Fish"],
-    [iFishPike, fishLayer, -116, 54, "Pike Fish"],
-    [iFishPike, fishLayer, -54, 42.75, "Pike Fish"],
-    [iFishPike, fishLayer, -45, 42, "Pike Fish"],
-    [iFishPike, fishLayer, 0, 46, "Pike Fish"],
-    [iFishPike, fishLayer, -45, 12, "Pike Fish"],
-    [iFishPike, fishLayer, -89, 15.5, "Pike Fish"],
-    [iFishPike, fishLayer, -151, -1.5, "Pike Fish"],
-    [iFishPike, fishLayer, -212.5, 126, "Pike Fish"],
-    [iFishPike, fishLayer, -159, 88.5, "Pike Fish"],
-    [iFishPike, fishLayer, -214.5, 138, "Pike Fish"],
-    [iFishPike, fishLayer, -218, 149.5, "Pike Fish"],
-    [iFishPike, fishLayer, -189, 148, "Pike Fish"],
-    [iFishPike, fishLayer, -185, 157, "Pike Fish"],
-    [iFishPike, fishLayer, -97, 73, "Pike Fish"],
-    [iFishPike, fishLayer, -94.25, 83, "Pike Fish"],
-    [iFishPike, fishLayer, -157.25, 105, "Pike Fish"],
-    [iFishPike, fishLayer, -157, 80, "Pike Fish"],
-    [iFishPike, fishLayer, -128, 76.5, "Pike Fish"],
-    [iFishPike, fishLayer, -98.75, 98, "Pike Fish"],
-    [iFishPike, fishLayer, -83.5, 103, "Pike Fish"],
-    [iFishPike, fishLayer, -42, 65.5, "Pike Fish"],
-    [iFishPike, fishLayer, -38, 93, "Pike Fish"],
-    [iFishPike, fishLayer, -40.5, 182, "Pike Fish"],
-    [iFishPike, fishLayer, -62, 206.25, "Pike Fish"],
-    [iFishPike, fishLayer, -113, 178, "Pike Fish"],
-    [iFishPike, fishLayer, -136, 172, "Pike Fish"],
-    [iFishPike, fishLayer, -142, 167, "Pike Fish"],
-    [iFishPike, fishLayer, -151, 168, "Pike Fish"],
-    [iFishPike, fishLayer, -166, 150.5, "Pike Fish"],
-    [iFishPike, fishLayer, -177, 132, "Pike Fish"],
-    [iFishPike, fishLayer, -87, 241.5, "Pike Fish"],
-    [iFishPike, fishLayer, -106, 240, "Pike Fish"],
-    [iFishPike, fishLayer, -124, 250, "Pike Fish"],
-    [iFishPike, fishLayer, -135, 221.5, "Pike Fish"],
-    [iFishPike, fishLayer, -155, 249.75, "Pike Fish"],
-    [iFishPike, fishLayer, -179, 246.5, "Pike Fish"],
-    [iFishPike, fishLayer, -194.5, 246, "Pike Fish"],
-    [iFishPike, fishLayer, -220.5, 242, "Pike Fish"],
-    [iFishPike, fishLayer, -217.75, 174, "Pike Fish"],
-    [iFishPike, fishLayer, -211, 229.25, "Pike Fish"],
+    [iFishPike, fishLayer, -134, 13, "Pike"], // ----- Pike
+    [iFishPike, fishLayer, -167.5, 44, "Pike"],
+    [iFishPike, fishLayer, -131, 46, "Pike"],
+    [iFishPike, fishLayer, -210.5, 10, "Pike"],
+    [iFishPike, fishLayer, -116, 54, "Pike"],
+    [iFishPike, fishLayer, -54, 42.75, "Pike"],
+    [iFishPike, fishLayer, -45, 42, "Pike"],
+    [iFishPike, fishLayer, 0, 46, "Pike"],
+    [iFishPike, fishLayer, -45, 12, "Pike"],
+    [iFishPike, fishLayer, -89, 15.5, "Pike"],
+    [iFishPike, fishLayer, -151, -1.5, "Pike"],
+    [iFishPike, fishLayer, -212.5, 126, "Pike"],
+    [iFishPike, fishLayer, -159, 88.5, "Pike"],
+    [iFishPike, fishLayer, -214.5, 138, "Pike"],
+    [iFishPike, fishLayer, -218, 149.5, "Pike"],
+    [iFishPike, fishLayer, -189, 148, "Pike"],
+    [iFishPike, fishLayer, -185, 157, "Pike"],
+    [iFishPike, fishLayer, -97, 73, "Pike"],
+    [iFishPike, fishLayer, -94.25, 83, "Pike"],
+    [iFishPike, fishLayer, -157.25, 105, "Pike"],
+    [iFishPike, fishLayer, -157, 80, "Pike"],
+    [iFishPike, fishLayer, -128, 76.5, "Pike"],
+    [iFishPike, fishLayer, -98.75, 98, "Pike"],
+    [iFishPike, fishLayer, -83.5, 103, "Pike"],
+    [iFishPike, fishLayer, -42, 65.5, "Pike"],
+    [iFishPike, fishLayer, -38, 93, "Pike"],
+    [iFishPike, fishLayer, -40.5, 182, "Pike"],
+    [iFishPike, fishLayer, -62, 206.25, "Pike"],
+    [iFishPike, fishLayer, -113, 178, "Pike"],
+    [iFishPike, fishLayer, -136, 172, "Pike"],
+    [iFishPike, fishLayer, -142, 167, "Pike"],
+    [iFishPike, fishLayer, -151, 168, "Pike"],
+    [iFishPike, fishLayer, -166, 150.5, "Pike"],
+    [iFishPike, fishLayer, -177, 132, "Pike"],
+    [iFishPike, fishLayer, -87, 241.5, "Pike"],
+    [iFishPike, fishLayer, -106, 240, "Pike"],
+    [iFishPike, fishLayer, -124, 250, "Pike"],
+    [iFishPike, fishLayer, -135, 221.5, "Pike"],
+    [iFishPike, fishLayer, -155, 249.75, "Pike"],
+    [iFishPike, fishLayer, -179, 246.5, "Pike"],
+    [iFishPike, fishLayer, -194.5, 246, "Pike"],
+    [iFishPike, fishLayer, -220.5, 242, "Pike"],
+    [iFishPike, fishLayer, -217.75, 174, "Pike"],
+    [iFishPike, fishLayer, -211, 229.25, "Pike"],
 
-    [iFishAtlanticCod, fishLayer, -22, 228, "Atlantic Cod Fish"], // ----- Atlantic Cod
+    [iFishAtlanticCod, fishLayer, -22, 228, "Cod"], // ----- Atlantic Cod
 
-    [iFishCatfish, fishLayer, -65, 204.75, "Catfish Fish"], // ----- Catfish
-    [iFishCatfish, fishLayer, -80, 193.5, "Catfish Fish"],
-    [iFishCatfish, fishLayer, -133, 224, "Catfish Fish"],
+    [iFishCatfish, fishLayer, -65, 204.75, "Catfish"], // ----- Catfish
+    [iFishCatfish, fishLayer, -80, 193.5, "Catfish"],
+    [iFishCatfish, fishLayer, -133, 224, "Catfish"],
 
-    [iFishWhite, fishLayer, -156, 32, "White Fish"], // ----- White
-    [iFishWhite, fishLayer, -131, 126, "White Fish"],
+    [iFishWhite, fishLayer, -156, 32, "Whitefish"], // ----- White
+    [iFishWhite, fishLayer, -131, 126, "Whitefish"],
 
-    [iFishPerch, fishLayer, -164, 9, "Perch Fish"], // ----- Perch
-    [iFishPerch, fishLayer, -169, 19, "Perch Fish"],
-    [iFishPerch, fishLayer, -167.5, 42, "Perch Fish"],
-    [iFishPerch, fishLayer, -130.75, 44, "Perch Fish"],
-    [iFishPerch, fishLayer, -120, 36, "Perch Fish"],
-    [iFishPerch, fishLayer, -186.5, 27, "Perch Fish"],
-    [iFishPerch, fishLayer, -192, 32, "Perch Fish"],
-    [iFishPerch, fishLayer, -205.5, 78, "Perch Fish"],
-    [iFishPerch, fishLayer, -214.5, 77.25, "Perch Fish"],
-    [iFishPerch, fishLayer, -215.25, 90.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -199, 82, "Perch Fish"],
-    [iFishPerch, fishLayer, -214.5, 103, "Perch Fish"],
-    [iFishPerch, fishLayer, -213, 128, "Perch Fish"],
-    [iFishPerch, fishLayer, -208, 157, "Perch Fish"],
-    [iFishPerch, fishLayer, -196, 136, "Perch Fish"],
-    [iFishPerch, fishLayer, -159, 104, "Perch Fish"],
-    [iFishPerch, fishLayer, -218, 138, "Perch Fish"],
-    [iFishPerch, fishLayer, -225.5, 140, "Perch Fish"],
-    [iFishPerch, fishLayer, -215, 151.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -189, 150, "Perch Fish"],
-    [iFishPerch, fishLayer, -181, 156, "Perch Fish"],
-    [iFishPerch, fishLayer, -95.5, 76, "Perch Fish"],
-    [iFishPerch, fishLayer, -93, 87, "Perch Fish"],
-    [iFishPerch, fishLayer, -155, 78.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -125, 76.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -103, 81, "Perch Fish"],
-    [iFishPerch, fishLayer, -99.5, 93, "Perch Fish"],
-    [iFishPerch, fishLayer, -82.5, 101, "Perch Fish"],
-    [iFishPerch, fishLayer, -68, 64, "Perch Fish"],
-    [iFishPerch, fishLayer, -46, 63.75, "Perch Fish"],
-    [iFishPerch, fishLayer, -68, 202.75, "Perch Fish"],
-    [iFishPerch, fishLayer, -163, 149.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -171, 127, "Perch Fish"],
-    [iFishPerch, fishLayer, -178, 163.75, "Perch Fish"],
-    [iFishPerch, fishLayer, -121, 250, "Perch Fish"],
-    [iFishPerch, fishLayer, -132.5, 220.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -135.75, 240, "Perch Fish"],
-    [iFishPerch, fishLayer, -152, 250, "Perch Fish"],
-    [iFishPerch, fishLayer, -176, 247.5, "Perch Fish"],
-    [iFishPerch, fishLayer, -176, 235, "Perch Fish"],
-    [iFishPerch, fishLayer, -193, 244, "Perch Fish"],
-    [iFishPerch, fishLayer, -218, 253, "Perch Fish"],
-    [iFishPerch, fishLayer, -214, 222, "Perch Fish"],
-    [iFishPerch, fishLayer, -217.5, 208, "Perch Fish"],
-    [iFishPerch, fishLayer, -217.25, 170, "Perch Fish"],
-    [iFishPerch, fishLayer, -214, 229.5, "Perch Fish"],
+    [iFishPerch, fishLayer, -164, 9, "Perch"], // ----- Perch
+    [iFishPerch, fishLayer, -169, 19, "Perch"],
+    [iFishPerch, fishLayer, -167.5, 42, "Perch"],
+    [iFishPerch, fishLayer, -130.75, 44, "Perch"],
+    [iFishPerch, fishLayer, -120, 36, "Perch"],
+    [iFishPerch, fishLayer, -186.5, 27, "Perch"],
+    [iFishPerch, fishLayer, -192, 32, "Perch"],
+    [iFishPerch, fishLayer, -205.5, 78, "Perch"],
+    [iFishPerch, fishLayer, -214.5, 77.25, "Perch"],
+    [iFishPerch, fishLayer, -215.25, 90.5, "Perch"],
+    [iFishPerch, fishLayer, -199, 82, "Perch"],
+    [iFishPerch, fishLayer, -214.5, 103, "Perch"],
+    [iFishPerch, fishLayer, -213, 128, "Perch"],
+    [iFishPerch, fishLayer, -208, 157, "Perch"],
+    [iFishPerch, fishLayer, -196, 136, "Perch"],
+    [iFishPerch, fishLayer, -159, 104, "Perch"],
+    [iFishPerch, fishLayer, -218, 138, "Perch"],
+    [iFishPerch, fishLayer, -225.5, 140, "Perch"],
+    [iFishPerch, fishLayer, -215, 151.5, "Perch"],
+    [iFishPerch, fishLayer, -189, 150, "Perch"],
+    [iFishPerch, fishLayer, -181, 156, "Perch"],
+    [iFishPerch, fishLayer, -95.5, 76, "Perch"],
+    [iFishPerch, fishLayer, -93, 87, "Perch"],
+    [iFishPerch, fishLayer, -155, 78.5, "Perch"],
+    [iFishPerch, fishLayer, -125, 76.5, "Perch"],
+    [iFishPerch, fishLayer, -103, 81, "Perch"],
+    [iFishPerch, fishLayer, -99.5, 93, "Perch"],
+    [iFishPerch, fishLayer, -82.5, 101, "Perch"],
+    [iFishPerch, fishLayer, -68, 64, "Perch"],
+    [iFishPerch, fishLayer, -46, 63.75, "Perch"],
+    [iFishPerch, fishLayer, -68, 202.75, "Perch"],
+    [iFishPerch, fishLayer, -163, 149.5, "Perch"],
+    [iFishPerch, fishLayer, -171, 127, "Perch"],
+    [iFishPerch, fishLayer, -178, 163.75, "Perch"],
+    [iFishPerch, fishLayer, -121, 250, "Perch"],
+    [iFishPerch, fishLayer, -132.5, 220.5, "Perch"],
+    [iFishPerch, fishLayer, -135.75, 240, "Perch"],
+    [iFishPerch, fishLayer, -152, 250, "Perch"],
+    [iFishPerch, fishLayer, -176, 247.5, "Perch"],
+    [iFishPerch, fishLayer, -176, 235, "Perch"],
+    [iFishPerch, fishLayer, -193, 244, "Perch"],
+    [iFishPerch, fishLayer, -218, 253, "Perch"],
+    [iFishPerch, fishLayer, -214, 222, "Perch"],
+    [iFishPerch, fishLayer, -217.5, 208, "Perch"],
+    [iFishPerch, fishLayer, -217.25, 170, "Perch"],
+    [iFishPerch, fishLayer, -214, 229.5, "Perch"],
 
-    [iFishRainbow, fishLayer, -171, 10.5, "Rainbow Fish"], // ----- Rainbow
-    [iFishRainbow, fishLayer, -38, 43.5, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, 0, 42, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -39, 11, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -145, -0.5, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -159.75, 86, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -94, 65, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -82, 76, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -36.75, 97, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -37.5, 174, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -96, 186, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -90, 241.5, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -103, 241, "Rainbow Fish"],
-    [iFishRainbow, fishLayer, -115, 247, "Rainbow Fish"],
+    [iFishRainbow, fishLayer, -171, 10.5, "Rainbow Trout"], // ----- Rainbow
+    [iFishRainbow, fishLayer, -38, 43.5, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, 0, 42, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -39, 11, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -145, -0.5, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -159.75, 86, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -94, 65, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -82, 76, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -36.75, 97, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -37.5, 174, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -96, 186, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -90, 241.5, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -103, 241, "Rainbow Trout"],
+    [iFishRainbow, fishLayer, -115, 247, "Rainbow Trout"],
 
-    [iFishSalmon, fishLayer, -169, 21, "Salmon Fish"], // ----- Salmon
-    [iFishSalmon, fishLayer, -14, 74, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -0.5, 22, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -14, 12.5, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -205, 83, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -93, 188.5, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -21.4, 234, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -182, 244.5, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -217.5, 172, "Salmon Fish"],
-    [iFishSalmon, fishLayer, -208, 230.5, "Salmon Fish"],
+    [iFishSalmon, fishLayer, -169, 21, "Salmon"], // ----- Salmon
+    [iFishSalmon, fishLayer, -14, 74, "Salmon"],
+    [iFishSalmon, fishLayer, -0.5, 22, "Salmon"],
+    [iFishSalmon, fishLayer, -14, 12.5, "Salmon"],
+    [iFishSalmon, fishLayer, -205, 83, "Salmon"],
+    [iFishSalmon, fishLayer, -93, 188.5, "Salmon"],
+    [iFishSalmon, fishLayer, -21.4, 234, "Salmon"],
+    [iFishSalmon, fishLayer, -182, 244.5, "Salmon"],
+    [iFishSalmon, fishLayer, -217.5, 172, "Salmon"],
+    [iFishSalmon, fishLayer, -208, 230.5, "Salmon"],
 
-    [iFishHaddock, fishLayer, -168.5, 23, "Haddock Fish"], // ----- Haddock
-    [iFishHaddock, fishLayer, -129, 50, "Haddock Fish"],
-    [iFishHaddock, fishLayer, -187, 29, "Haddock Fish"],
-    [iFishHaddock, fishLayer, -206.5, 85, "Haddock Fish"],
-    [iFishHaddock, fishLayer, -174, 128.5, "Haddock Fish"],
-    [iFishHaddock, fishLayer, -135.25, 236, "Haddock Fish"],
-    [iFishHaddock, fishLayer, -173, 248.5, "Haddock Fish"],
-    [iFishHaddock, fishLayer, -217, 168, "Haddock Fish"],
+    [iFishHaddock, fishLayer, -168.5, 23, "Haddock"], // ----- Haddock
+    [iFishHaddock, fishLayer, -129, 50, "Haddock"],
+    [iFishHaddock, fishLayer, -187, 29, "Haddock"],
+    [iFishHaddock, fishLayer, -206.5, 85, "Haddock"],
+    [iFishHaddock, fishLayer, -174, 128.5, "Haddock"],
+    [iFishHaddock, fishLayer, -135.25, 236, "Haddock"],
+    [iFishHaddock, fishLayer, -173, 248.5, "Haddock"],
+    [iFishHaddock, fishLayer, -217, 168, "Haddock"],
 
-    [iFishMistyGrouper, fishLayer, -210, 14, "Misty Grouper Fish"], // ----- Misty Grouper
-    [iFishMistyGrouper, fishLayer, -198.5, 249, "Misty Grouper Fish"], // ----- Misty Grouper
+    [iFishMistyGrouper, fishLayer, -210, 14, "Misty Grouper"], // ----- Misty Grouper
+    [iFishMistyGrouper, fishLayer, -198.5, 249, "Misty Grouper"], // ----- Misty Grouper
 
-    [iFishBlackGrouper, fishLayer, -210, 12, "Dark Grouper Fish"], // ----- Dark Grouper
-    [iFishBlackGrouper, fishLayer, -196.5, 248, "Dark Grouper Fish"],
+    [iFishBlackGrouper, fishLayer, -210, 12, "Black Grouper"], // ----- Dark Grouper
+    [iFishBlackGrouper, fishLayer, -196.5, 248, "Black Grouper"],
 
-    [iFishSalmonShark, fishLayer, -11, 74.5, "Salmon Shark Fish"], // ----- Salmon Shark
-    [iFishSalmonShark, fishLayer, 0, 24, "Salmon Shark Fish"],
-    [iFishSalmonShark, fishLayer, -11, 12, "Salmon Shark Fish"],
+    [iFishSalmonShark, fishLayer, -11, 74.5, "Salmon Shark"], // ----- Salmon Shark
+    [iFishSalmonShark, fishLayer, 0, 24, "Salmon Shark"],
+    [iFishSalmonShark, fishLayer, -11, 12, "Salmon Shark"],
 
-    [iFishArcticChar, fishLayer, -8, 75.5, "Arctic Char Fish"], // ----- Arctic Char
-    [iFishArcticChar, fishLayer, -17, 11.75, "Arctic Char Fish"],
-    [iFishArcticChar, fishLayer, -21, 231, "Arctic Char Fish"],
+    [iFishArcticChar, fishLayer, -8, 75.5, "Arctic Char"], // ----- Arctic Char
+    [iFishArcticChar, fishLayer, -17, 11.75, "Arctic Char"],
+    [iFishArcticChar, fishLayer, -21, 231, "Arctic Char"],
 
     // Feathers ------------------------------------------
 
@@ -374,29 +374,29 @@ var markerArray = [
     [iPlantWheat, plantLayer, -151, 213, "Wheat"],
     [iPlantWheat, plantLayer, -123, 240, "Wheat"],
 
-    [iPlantCloudberry, plantLayer, -89, 71, "Cloudberry"], // ----- Cloudberry
-    [iPlantCloudberry, plantLayer, -96, 122, "Cloudberry"],
-    [iPlantCloudberry, plantLayer, -99, 146, "Cloudberry"],
-    [iPlantCloudberry, plantLayer, -110, 175, "Cloudberry"],
-    [iPlantCloudberry, plantLayer, -149, 220, "Cloudberry"],
+    [iPlantCloudberries, plantLayer, -89, 71, "Cloudberries"], // ----- Cloudberries
+    [iPlantCloudberries, plantLayer, -96, 122, "Cloudberries"],
+    [iPlantCloudberries, plantLayer, -99, 146, "Cloudberries"],
+    [iPlantCloudberries, plantLayer, -110, 175, "Cloudberries"],
+    [iPlantCloudberries, plantLayer, -149, 220, "Cloudberries"],
 
-    [iPlantRaspberry, plantLayer, -194, 96, "Raspberry"], // ----- Raspberry
-    [iPlantRaspberry, plantLayer, -171, 91, "Raspberry"],
-    [iPlantRaspberry, plantLayer, -201, 136, "Raspberry"],
-    [iPlantRaspberry, plantLayer, -115, 100, "Raspberry"],
-    [iPlantRaspberry, plantLayer, -196, 223, "Raspberry"],
-    [iPlantRaspberry, plantLayer, -188, 208, "Raspberry"],
-    [iPlantRaspberry, plantLayer, -177, 218, "Raspberry"],
-    [iPlantRaspberry, plantLayer, -149, 211, "Raspberry"],
+    [iPlantRaspberries, plantLayer, -194, 96, "Raspberries"], // ----- Raspberries
+    [iPlantRaspberries, plantLayer, -171, 91, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -201, 136, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -115, 100, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -196, 223, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -188, 208, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -177, 218, "Raspberries"],
+    [iPlantRaspberries, plantLayer, -149, 211, "Raspberries"],
 
-    [iPlantBlackberry, plantLayer, -171, 95, "Blackberry"], // ----- Blackberry
-    [iPlantBlackberry, plantLayer, -199, 128, "Blackberry"],
-    [iPlantBlackberry, plantLayer, -130, 85, "Blackberry"],
-    [iPlantBlackberry, plantLayer, -116, 98, "Blackberry"],
-    [iPlantBlackberry, plantLayer, -200, 215, "Blackberry"],
-    [iPlantBlackberry, plantLayer, -165, 242, "Blackberry"],
-    [iPlantBlackberry, plantLayer, -165, 242, "Blackberry"],
-    [iPlantBlackberry, plantLayer, -151, 215.5, "Blackberry"],
+    [iPlantBlackberries, plantLayer, -171, 95, "Blackberries"], // ----- Blackberries
+    [iPlantBlackberries, plantLayer, -199, 128, "Blackberries"],
+    [iPlantBlackberries, plantLayer, -130, 85, "Blackberries"],
+    [iPlantBlackberries, plantLayer, -116, 98, "Blackberries"],
+    [iPlantBlackberries, plantLayer, -200, 215, "Blackberries"],
+    [iPlantBlackberries, plantLayer, -165, 242, "Blackberries"],
+    [iPlantBlackberries, plantLayer, -165, 242, "Blackberries"],
+    [iPlantBlackberries, plantLayer, -151, 215.5, "Blackberries"],
 
     [iPlantPoppy, plantLayer, -245, 111, "Poppy"], // ----- Poppy
     [iPlantPoppy, plantLayer, -151, 87, "Poppy"],
@@ -429,10 +429,7 @@ var markerArray = [
     [iPlantWindflower, plantLayer, -200, 209, "Windflower"],
     [iPlantWindflower, plantLayer, -123, 242, "Windflower"],
 
-    [iPlantMez, plantLayer, -211, 240, "Mez"],
-
-
-
+    [iPlantMezereon, plantLayer, -211, 240, "Mezereons"],
 ];
 
 for (var i = 0; i < markerArray.length; i++) {
