@@ -5,6 +5,7 @@ var toggleFish = new Boolean(false);
 var toggleFeather = new Boolean(false);
 var togglePlant = new Boolean(false);
 var toggleShop = new Boolean(false);
+var toggleMonument = new Boolean(false);
 
 document.addEventListener('click', function handleClick(e) {
             var t = e.target // Set Target variable.
@@ -40,5 +41,11 @@ document.addEventListener('click', function handleClick(e) {
             } else if (t.classList.contains("shop") && toggleShop == true) {
                 map.removeLayer(shopLayer);
                 toggleShop = false;
+            } else if (t.classList.contains("monument") && toggleMonument == false) {
+                map.addLayer(monumentLayer);
+                toggleMonument = true;
+            } else if (t.classList.contains("monument") && toggleMonument == true) {
+                map.removeLayer(monumentLayer);
+                toggleMonument = false;
             }
 });

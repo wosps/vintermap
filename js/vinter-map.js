@@ -53,6 +53,13 @@ var iPort = new portIcon({
 var iShopMystery = new itemIcon({
     iconUrl: 'img/icons/mystery-shop.png'
 });
+var iShopNormal = new itemIcon({
+    iconUrl: 'img/icons/common-shop.png'
+});
+
+var iMonumentCrate = new itemIcon({
+    iconUrl: 'img/icons/crate-monument.png'
+});
 
 var iFishPike = new itemIcon({
     iconUrl: 'img/icons/pike-fish.png'
@@ -166,12 +173,14 @@ var fishLayer = L.layerGroup([]);
 var featherLayer = L.layerGroup([]);
 var plantLayer = L.layerGroup([]);
 var shopLayer = L.layerGroup([]);
+var monumentLayer = L.layerGroup([]);
 
 var overlayMaps = {
     "Ports": portLayer,
     "Fish": fishLayer,
     "Feathers": featherLayer,
     "Plants": plantLayer,
+    "Monuments": monumentLayer,
     "Shops": shopLayer
 };
 
@@ -198,6 +207,42 @@ var markerArray = [
     [iShopMystery, shopLayer, -113, 193, "Mystery Shop"],
     [iShopMystery, shopLayer, -164, 35, "Mystery Shop"],
     [iShopMystery, shopLayer, -210.5, 128.75, "Mystery Shop"],
+
+    // Normal Shops -------------------------------------
+
+    [iShopNormal, shopLayer, -70, 29, "James General Store"],
+    [iShopNormal, shopLayer, -164, 39, "James General Store"],
+    [iShopNormal, shopLayer, -116, 81, "James General Store"],
+    [iShopNormal, shopLayer, -79, 101, "James General Store"],
+    [iShopNormal, shopLayer, -175, 139, "James General Store"],
+    [iShopNormal, shopLayer, -164, 195, "James General Store"],
+    [iShopNormal, shopLayer, -196, 190, "James General Store"],
+
+    // Monuments ----------------------------------------
+
+    [iMonumentCrate, monumentLayer, -10, 66, "Crate"],
+    [iMonumentCrate, monumentLayer, -32, 24, "Crate"],
+    [iMonumentCrate, monumentLayer, -70, 36, "Crate"],
+    [iMonumentCrate, monumentLayer, -70, 34, "Crate"],
+    [iMonumentCrate, monumentLayer, -206, 22, "Crate"],
+    [iMonumentCrate, monumentLayer, -68, 148, "Crate"],
+    [iMonumentCrate, monumentLayer, -68, 146, "Crate"],
+    [iMonumentCrate, monumentLayer, -80, 103, "Crate"],
+    [iMonumentCrate, monumentLayer, -81, 105, "Crate"],
+    [iMonumentCrate, monumentLayer, -90, 73, "Crate"],
+    [iMonumentCrate, monumentLayer, -92, 131, "Crate"],
+    [iMonumentCrate, monumentLayer, -97, 137, "Crate"],
+    [iMonumentCrate, monumentLayer, -121, 151, "Crate"],
+    [iMonumentCrate, monumentLayer, -121, 153, "Crate"],
+    [iMonumentCrate, monumentLayer, -179, 99, "Crate"],
+    [iMonumentCrate, monumentLayer, -113, 191, "Crate"],
+    [iMonumentCrate, monumentLayer, -156, 174, "Crate"],
+    [iMonumentCrate, monumentLayer, -162, 194, "Crate"],
+    [iMonumentCrate, monumentLayer, -162, 196, "Crate"],
+    [iMonumentCrate, monumentLayer, -194, 189, "Crate"],
+    [iMonumentCrate, monumentLayer, -194, 191, "Crate"],
+    [iMonumentCrate, monumentLayer, -206, 242, "Crate"],
+    [iMonumentCrate, monumentLayer, -29, 231, "Crate"],
 
     // Fish ---------------------------------------------
     [iFishRed, fishLayer, -129, 14, "Redfish"], // ----- Red
