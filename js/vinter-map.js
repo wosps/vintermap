@@ -46,6 +46,14 @@ var portIcon = L.Icon.extend({
     }
 })
 
+var iPort = new portIcon({
+    iconUrl: 'img/icons/boat.png'
+});
+
+var iShopMystery = new itemIcon({
+    iconUrl: 'img/icons/mystery-shop.png'
+});
+
 var iFishPike = new itemIcon({
     iconUrl: 'img/icons/pike-fish.png'
 });
@@ -151,22 +159,20 @@ var iFeatherPristineCapercaillie = new itemIcon({
     iconUrl: 'img/icons/capercaillie-pristine-feather.png'
 });
 
-var iPort = new portIcon({
-    iconUrl: 'img/icons/boat.png'
-});
-
 // Marker Creation Loop -----------------------------------------------------------------------------
 
 var portLayer = L.layerGroup([]);
 var fishLayer = L.layerGroup([]);
 var featherLayer = L.layerGroup([]);
 var plantLayer = L.layerGroup([]);
+var shopLayer = L.layerGroup([]);
 
 var overlayMaps = {
     "Ports": portLayer,
     "Fish": fishLayer,
     "Feathers": featherLayer,
-    "Plants": plantLayer
+    "Plants": plantLayer,
+    "Shops": shopLayer
 };
 
 var markerArray = [
@@ -182,6 +188,16 @@ var markerArray = [
     [iPort, portLayer, -117, 243, "Heimo & Rose"],
     [iPort, portLayer, -164, 37, "Diogo's Dock"],
     [iPort, portLayer, -211, 256, "Pix's Island"],
+
+    // Mystery Shops ------------------------------------
+
+    [iShopMystery, shopLayer, -66.75, 43.75, "Mystery Shop"],
+    [iShopMystery, shopLayer, -68, 150, "Mystery Shop"],
+    [iShopMystery, shopLayer, -91, 184, "Mystery Shop"],
+    [iShopMystery, shopLayer, -97, 139, "Mystery Shop"],
+    [iShopMystery, shopLayer, -113, 193, "Mystery Shop"],
+    [iShopMystery, shopLayer, -164, 35, "Mystery Shop"],
+    [iShopMystery, shopLayer, -210.5, 128.75, "Mystery Shop"],
 
     // Fish ---------------------------------------------
     [iFishRed, fishLayer, -129, 14, "Redfish"], // ----- Red
@@ -374,11 +390,6 @@ var markerArray = [
     [iFishArcticChar, fishLayer, -21, 231, "Arctic Char"],
 
     // Feathers ------------------------------------------
-
-    // Pristine Hazel Hen Feather
-    // Pristine Kiiruna Feather
-    // Pristine Peacock Feather
-    // Pristine Capercaillie Feather
 
     [iFeatherPristineCapercaillie, featherLayer, -204, 28, "Pristine Capercaillie Feather"], // ----- Pristine Capercaillie Feather
     [iFeatherPristineCapercaillie, featherLayer, -145, 6, "Pristine Capercaillie Feather"],
