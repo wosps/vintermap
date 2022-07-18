@@ -8,7 +8,7 @@
         content="View the Longvinter island map showing all the farmable item locations for your compendium - find fishing spots, feather drops, flowers, shops and more!">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://vintermap.co/">
+    <meta property="og:url" content="https://vintermap.co">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vinter Map - Interactive Map for Longvinter">
     <meta property="og:description"
@@ -19,7 +19,7 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="vintermap.co">
-    <meta property="twitter:url" content="https://vintermap.co/">
+    <meta property="twitter:url" content="https://vintermap.co">
     <meta name="twitter:title" content="Vinter Map - Interactive Map for Longvinter">
     <meta name="twitter:description"
         content="View the Longvinter island map showing all the farmable item locations for your compendium - find fishing spots, feather drops, flowers, shops and more!">
@@ -42,7 +42,11 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KF0G4PC38"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -53,36 +57,34 @@
         gtag('js', new Date());
 
         gtag('config', 'G-2KF0G4PC38');
-    </script>
+    </script> -->
+
 </head>
-
 <body>
-    <div class="loader">
-        <div class="loader-content">
-            <img src="img/coming-soon.png">
-        </div>
-    </div>
-    <div class="main-map">
-        <div id="sidebar">
-            <a class="sidebar-top"><img class="logo" src="img/longvinter-logo.png"></a>
-            <a href="#" class="sidebar-btn port active"><i class="fa-solid fa-ship"></i></a>
-            <a href="#" class="sidebar-btn fish"><i class="fa-solid fa-fish"></i></a>
-            <a href="#" class="sidebar-btn plant"><i class="fa-solid fa-seedling"></i></a>
-            <a href="#" class="sidebar-btn feather"><i class="fa-solid fa-feather-pointed"></i></a>
-            <a href="#" class="sidebar-btn shop"><i class="fa-solid fa-store"></i></a>
-            <a href="#" class="sidebar-btn monument"><i class="fa-solid fa-monument"></i></a>
-            <a href="https://discord.gg/longvinter" target="_blank" class="sidebar-bottom"><i
-                    class="fa-brands fa-discord"></i></a>
-        </div>
-        <div class="info-box">
-            <h1>Made with ♥ by <a class="green-text" href="https://twitter.com/wosps" target="_blank"><b>@wosps</b></a>.</h1>
-            <p>Thanks to <span class="green-text">tucker#3666</span>, <span class="green-text">Matavatar#1808</span> and <span class="green-text">Miko#1279</span> for creating the original map.</p>
-        </div>
-
+    <header>
+    </header>
+    <main>
         <div id="map"></div>
-    </div>
+        <div class="container">
+            <nav class="nav-flex">
+                <ul>
+                    <li><button class="nav-pill nav-logo"><img src="img/longvinter-logo.png"><span class="nav-logo-text">Vinter<br>Map</span></button></li>
+                    <li><button class="nav-pill nav-btn port active"><span class="nav-icon active"><i class="fa-solid fa-ship"></i></span><span class="nav-btn-label">Ports</span></button></li>
+                    <li><button class="nav-pill nav-btn feather"><span class="nav-icon"><i class="fa-solid fa-feather-pointed"></i></span><span class="nav-btn-label">Feathers</span></button></li>
+                    <li><button class="nav-pill nav-btn fish"><span class="nav-icon "><i class="fa-solid fa-fish"></i></span><span class="nav-btn-label">Fish</span></button></li>
+                    <li><button class="nav-pill nav-btn plant"><span class="nav-icon"><i class="fa-solid fa-seedling"></i></span><span class="nav-btn-label">Plants</span></button></li>
+                    <li><button class="nav-pill nav-btn shop"><span class="nav-icon"><i class="fa-solid fa-store"></i></span><span class="nav-btn-label">Shops</span></button></li>
+                    <li><button class="nav-pill nav-btn monument"><span class="nav-icon"><i class="fa-solid fa-landmark"></i></span><span class="nav-btn-label">Monuments</span></button></li>
+                </ul>
+                <ul>
+                    <li class="nav-link"><a href="https://twitter.com/wosps" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="nav-link"><a href="https://discord.gg/longvinter" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                    <li class="nav-link"><a href="https://store.steampowered.com/app/1635450/Longvinter/" target="_blank"><i class="fa-brands fa-steam-symbol"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
     <script src="js/vinter-map.js"></script>
     <script src="js/vinter-sidebar.js"></script>
 </body>
-
 </html>

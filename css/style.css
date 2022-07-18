@@ -1,265 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* =================
+Variables & Misc
+====================*/
 
 :root {
-  --primary-colour: #1C1D43;
-  --secondary-colour: #ffffff;
-  --primary-accent-colour: #63C7A2;
+    --primary-colour: #1C1D43;
+    --secondary-colour: #ffffff;
+    --primary-accent-colour: #00B874;
+    font-size: 15px;
 }
-
-/* Modern CSS Reset - https://piccalil.li/blog/a-modern-css-reset/ */
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-/* Modern CSS Reset - END */
-
-a:link {
-  text-decoration: none; 
-color: white;
-}
-
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-a:active { 
-  text-decoration: none;
-  color: white;
-}
-
-/* Reset Complete! */
 
 body {
-    font-family: 'Lato', sans-serif;
-}
-
-.loader {
-  background-color: var(--primary-accent-colour);
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  display: none;
-}
-
-.loader-content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: var(--primary-accent-colour);
-  display: none;
-}
-
-#sidebar {
-  margin-top: 0.5%;
-  margin-left: 0.5%;
-  height: 98%;
-  width: 80px;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: var(--primary-colour);
-  /* overflow-x: hidden; */
-  color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
-}
-
-#sidebar a {
-  display: block;
-  text-align: center;
-  padding: 16px 16px 16px 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px; 
-  border-bottom: 1px solid #27285c;
-}
-
-.sidebar-bottom {
-  border-top: 3px solid #27285c !important;
-  background-color: var(--primary-colour);
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  border-radius: 0px 0px 10px 10px;
-}
-
-.sidebar-top {
-  border-bottom: 3px solid #27285c !important;
-}
-
-.sidebar-btn:hover {
-  background-color: var(--primary-accent-colour);
-}
-
-.active {
- background-color: #2b2d66;
-}
-
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-.info-box {
-  width: 220px;
-  height: 150px;
-  padding: 20px;
-  background-color: var(--primary-colour);
-  color: white;
-  border-radius: 10px;
-  font-size: 8px;
-  margin-right: 1%;
-  position: fixed;
-  z-index: 10;
-  bottom: 15px;
-  right: 0;
-}
-
-.info-box h1{
-  padding-bottom: 5px;
-  border-bottom: solid .5px #27285c;
-}
-
-.info-box p {
-  padding-top: 5px;
-  font-size: 13px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  font-weight: 700;
-}
-
-.tooltip .tooltipText {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  left: 110%;
-  width: 100%;
-  font-size: 17px;
-  background-color: var(--primary-colour);
-}
-
-.tooltip:hover .tooltipText {
-  visibility: visible;
-}
-
-.tooltip .tooltipText::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: 0px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent black transparent transparent;
+    font-size: 8px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #map {
+    position: fixed;
+    top: 0;
     height: 100vh;
     background-color: #6451db;
-    z-index: 5;
+    z-index: 0;
+    width: 100%;
 }
 
-.green-text {
-  color: var(--primary-accent-colour);
+/* =================
+Typography
+====================*/
+
+h1 {
+    margin: -1;
 }
 
-a.green-text {
-  color: var(--primary-accent-colour);
+a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
-@media only screen and (max-width: 800px) {
-    .info-box {
-      display: none;
+
+/* =================
+Layout
+====================*/
+
+nav {
+    width: 75%;
+    margin: 0 auto;
+    min-width: 1450px;
+}
+
+header {
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav-pill {
+    font-weight: 800;
+    font-size: .85rem;
+    text-transform: uppercase;
+    border: 0;
+    padding: 0 2em 0 0;
+    height: 3rem;
+    background-color: var(--primary-colour);
+    color: white;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    line-height: 3rem;
+}
+
+.nav-btn {
+    cursor: pointer;
+    margin-left: 2em;
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+.nav-btn.active {
+    background-color: #00a668;
+}
+
+.nav-link {
+    font-weight: 800;
+    font-size: 1.25rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-left: 1.5rem;
+}
+
+.nav-link a {
+    padding: .5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #40378F;
+    border-radius: 10px;
+}
+
+.nav-logo {
+    padding: 0 2em;
+    background-color: var(--primary-accent-colour);
+    cursor: default;
+}
+
+.nav-logo-text {
+    margin-left: .5rem;
+    display: inline-block;
+    line-height: 1rem;
+    text-align: left;
+    vertical-align: middle;;
+}
+
+img {
+    height: 60%;
+    width: auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+.nav-icon {
+    display: inline-block;
+    width: 3.2rem;
+    height: 100%;
+    margin: -2px 1rem 0 -2px;
+
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #2B2D66;
+}
+
+.nav-icon.active {
+    background-color: var(--primary-accent-colour);
+}
+
+@media screen and (max-width: 1450px) {
+    nav ul {
+      flex-direction: column;
+      margin-left: 1rem;
+    }
+
+    .nav-icon {
+        margin-right: 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .nav-btn {
+        margin: 1rem 0 0 0;
+    }
+
+    .nav-btn-label {
+        display: none;
+    }
+
+    .nav-pill.nav-btn{
+        padding-right: 0;
+    }
+    .nav-link {
+        display: none;
+    }
+    .container {
+        max-width: 155px;
+        min-width: 155px;
+    }
+    .nav-flex {
+        display: inline;
     }
 }

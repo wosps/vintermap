@@ -28,9 +28,10 @@ L.tileLayer('img/tiles/{z}/{x}/{y}.png', {
     noWrap: true
 }).addTo(map);
 
-map.addControl(L.control.zoom({
-    position: 'topright'
-})); // Add zoom controller to top-right.
+map.addControl(L.control.zoom({ // Add zoom controller to top-right.
+    position: 'bottomright'
+}));
+
 map.setView(new L.LatLng(-125, 125), 2); // Set view to centre(ish) of map.
 
 // Icon Definitions ---------------------------------------------------------------------------------
