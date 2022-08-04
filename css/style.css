@@ -119,6 +119,7 @@ nav ul {
 
 .nav-link a {
     padding: .5rem 1rem;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: #40378F;
     border-radius: 10px;
