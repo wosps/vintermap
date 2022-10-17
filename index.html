@@ -4,27 +4,6 @@
 <head>
     <!-- HTML Meta Tags -->
     <title>Vinter Map - Interactive Map for Longvinter</title>
-    <meta name="description"
-        content="View the Longvinter island map showing all the farmable item locations for your compendium - find fishing spots, feather drops, flowers, shops and more!">
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://vintermap.co">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vinter Map - Interactive Map for Longvinter">
-    <meta property="og:description"
-        content="View the Longvinter island map showing all the farmable item locations for your compendium - find fishing spots, feather drops, flowers, shops and more!">
-    <meta property="og:image" content="http://vintermap.co/img/logo.png">
-    <meta property="og:image:secure_url" content="https://vintermap.co/img/logo.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="vintermap.co">
-    <meta property="twitter:url" content="https://vintermap.co">
-    <meta name="twitter:title" content="Vinter Map - Interactive Map for Longvinter">
-    <meta name="twitter:description"
-        content="View the Longvinter island map showing all the farmable item locations for your compendium - find fishing spots, feather drops, flowers, shops and more!">
-    <meta name="twitter:image" content="https://vintermap.co/img/logo.png">
-
     <meta name="theme-color" content="#63C7A2">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -36,17 +15,11 @@
     <meta name="theme-color" content="#61a480">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/40f50f2ac6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-    Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KF0G4PC38"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -58,7 +31,6 @@
 
         gtag('config', 'G-2KF0G4PC38');
     </script>
-
 </head>
 <body>
     <header>
@@ -80,11 +52,26 @@
                     <li class="nav-link"><a href="https://twitter.com/wosps" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                     <li class="nav-link"><a href="https://discord.gg/longvinter" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
                     <li class="nav-link"><a href="https://store.steampowered.com/app/1635450/Longvinter/" target="_blank"><i class="fa-brands fa-steam-symbol"></i></a></li>
+                    <li class="nav-link"><a onclick="toggleModal()"><i class="fa-solid fa-question"></a></i>
                 </ul>
             </nav>
         </div>
+        <div id="modal">
+                <div class="modal-header">
+                    <h1>Thanks for using Vinter Map!</h1>
+                    <i onclick="toggleModal()" class="click fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="modal-main">
+                    <p>Vinter Map was made with ♥ by <a href="https://twitter.com/wosps" target="_blank">@wosps</a>.</p>
+                    <p>Special thanks to <span class="nametag">tucker#3666</span>, <span class="nametag">Bunn#2762</span>, <span class="nametag">Sir Nicolas#8642</span> and <span class="nametag">Christel#7861</span> for their assistance in locating all the items - this wouldn't have been possible without your help!</p>
+                    <p><strong>Notice a bug?</strong> <a href="https://twitter.com/messages/compose?recipient_id=306922362" target="_blank">Let me know via Twitter</a>!</p>
+                    <p><strong>Want to say thanks?</strong> The creation of Vinter Map was fuelled by coffee - <a href="https://ko-fi.com/wosps" target="_blank">you can contribute to my caffine addiction here!</a></p>
+                </div>
+        </div>
     </main>
-    <script src="js/vinter-map.js"></script>
-    <script src="js/vinter-sidebar.js"></script>
+    <script src="js/data/map-data.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/map-util.js"></script>
+
 </body>
 </html>
