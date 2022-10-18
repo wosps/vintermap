@@ -9,11 +9,11 @@ let addArr = [];
 var map = L.map('map', {
     attributionControl: false,
     zoomControl: false,
-}).setView([0, 0], 0);
+}).setView([0, 0], 3);
 
 // Map Tiles --------------------------------------------------------
 L.tileLayer('./img/tiles/{z}/{x}/{y}.png', {
-    minZoom: 3, 
+    minZoom: 2, 
     maxZoom: 5,
     continuousWorld: false,
     noWrap: true,

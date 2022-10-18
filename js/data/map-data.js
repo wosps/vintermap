@@ -283,7 +283,7 @@ const mapData = [
     },
     {
         icon: iShopNormal,
-        text: `<h3>Kyree's Equipment</h3><p>Shop</p>`,
+        text: `<h3>Kyrre's Equipment</h3><p>Shop</p>`,
         layer: shopLayer,
         coords: [[-66, 57], [46.5, 7], [17, 84]],
     },
