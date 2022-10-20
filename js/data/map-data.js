@@ -5,17 +5,6 @@ var shopLayer = L.layerGroup([]);
 var monumentLayer = L.layerGroup([]);
 var portLayer = L.layerGroup([]);
 
-const wheatText = `<h3>Wheat</h3><p>Plant</p>`
-
-// var overlayMaps = {
-//     "Ports": portLayer,
-//     "Fish": fishLayer,
-//     "Feathers": featherLayer,
-//     "Plants": plantLayer,
-//     "Monuments": monumentLayer,
-//     "Shops": shopLayer
-// };
-
 var itemIcon = L.Icon.extend({
     options: {
         iconSize: [40, 40]
@@ -165,7 +154,7 @@ const mapData = [
         icon: iPort,
         text: `<h3>Sirola's Secret Shop</h3><p>Port</p>`,
         layer: portLayer,
-        coords: [[-1, 16]],
+        coords: [[6, 20]],
     },
     {
         icon: iPort,
@@ -267,7 +256,7 @@ const mapData = [
         icon: iShopMystery,
         text: `<h3>Julia's Mysterios Shop</h3><p>Shop</p>`,
         layer: shopLayer,
-        coords: [[71.5, 112], [65, -77], [-54, -119], [-3, 23], [-51, -16], [-31, -74], [20, -68], [4, -9], [18, -2], [-61, 127]],
+        coords: [[71.5, 112], [65, -77], [-54, -119], [-3, 23], [-51, -16], [-31, -74], [20, -68], [4, -9], [18, -2], [-61, 127], [6, 18]],
     },
     {
         icon: iShopNormal,
